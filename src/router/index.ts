@@ -154,18 +154,18 @@ export const asyncRoutes:RouteRecordRaw[] = [
     ]
   },
 
-  {
-    path: '/icon',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/icons/index.vue'),
-        name: 'Icons',
-        meta: { title: '图标', icon: 'icon', noCache: true }
-      }
-    ]
-  },
+  // {
+  //   path: '/icon',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/icons/index.vue'),
+  //       name: 'Icons',
+  //       meta: { title: '图标', icon: 'icon', noCache: true }
+  //     }
+  //   ]
+  // },
 
   // /** when your routing map is too long, you can split it into small modules **/
   componentsRouter,
@@ -255,77 +255,77 @@ export const asyncRoutes:RouteRecordRaw[] = [
     ]
   },
 
-  {
-    path: '/excel',
-    component: Layout,
-    redirect: '/excel/export-excel',
-    name: 'Excel',
-    meta: {
-      title: 'Excel',
-      icon: 'excel'
-    },
-    children: [
-      {
-        path: 'export-excel',
-        component: () => import('@/views/excel/export-excel.vue'),
-        name: 'ExportExcel',
-        meta: { title: '导出 Excel' }
-      },
-      {
-        path: 'export-selected-excel',
-        component: () => import('@/views/excel/select-excel.vue'),
-        name: 'SelectExcel',
-        meta: { title: '导出 已选择项' }
-      },
-      {
-        path: 'export-merge-header',
-        component: () => import('@/views/excel/merge-header.vue'),
-        name: 'MergeHeader',
-        meta: { title: '导出 多级表头' }
-      },
-      {
-        path: 'upload-excel',
-        component: () => import('@/views/excel/upload-excel.vue'),
-        name: 'UploadExcel',
-        meta: { title: '上传 Excel' }
-      }
-    ]
-  },
+  // {
+  //   path: '/excel',
+  //   component: Layout,
+  //   redirect: '/excel/export-excel',
+  //   name: 'Excel',
+  //   meta: {
+  //     title: 'Excel',
+  //     icon: 'excel'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'export-excel',
+  //       component: () => import('@/views/excel/export-excel.vue'),
+  //       name: 'ExportExcel',
+  //       meta: { title: '导出 Excel' }
+  //     },
+  //     {
+  //       path: 'export-selected-excel',
+  //       component: () => import('@/views/excel/select-excel.vue'),
+  //       name: 'SelectExcel',
+  //       meta: { title: '导出 已选择项' }
+  //     },
+  //     {
+  //       path: 'export-merge-header',
+  //       component: () => import('@/views/excel/merge-header.vue'),
+  //       name: 'MergeHeader',
+  //       meta: { title: '导出 多级表头' }
+  //     },
+  //     {
+  //       path: 'upload-excel',
+  //       component: () => import('@/views/excel/upload-excel.vue'),
+  //       name: 'UploadExcel',
+  //       meta: { title: '上传 Excel' }
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/zip',
-    component: Layout,
-    redirect: '/zip/download',
-    name: 'Zip',
-    meta: { alwaysShow: true, title: 'Zip', icon: 'zip' },
-    children: [
-      {
-        path: 'download',
-        component: () => import('@/views/zip/index.vue'),
-        name: 'ExportZip',
-        meta: { title: '导出 Zip' }
-      }
-    ]
-  },
+  // {
+  //   path: '/zip',
+  //   component: Layout,
+  //   redirect: '/zip/download',
+  //   name: 'Zip',
+  //   meta: { alwaysShow: true, title: 'Zip', icon: 'zip' },
+  //   children: [
+  //     {
+  //       path: 'download',
+  //       component: () => import('@/views/zip/index.vue'),
+  //       name: 'ExportZip',
+  //       meta: { title: '导出 Zip' }
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/pdf',
-    component: Layout,
-    redirect: '/pdf/index',
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/pdf/index.vue'),
-        name: 'PDF',
-        meta: { title: 'PDF', icon: 'pdf' }
-      }
-    ]
-  },
-  {
-    path: '/pdf/download',
-    component: () => import('@/views/pdf/download.vue'),
-    meta: { hidden: true }
-  },
+  // {
+  //   path: '/pdf',
+  //   component: Layout,
+  //   redirect: '/pdf/index',
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/pdf/index.vue'),
+  //       name: 'PDF',
+  //       meta: { title: 'PDF', icon: 'pdf' }
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: '/pdf/download',
+  //   component: () => import('@/views/pdf/download.vue'),
+  //   meta: { hidden: true }
+  // },
 
   {
     path: '/theme',
@@ -340,54 +340,54 @@ export const asyncRoutes:RouteRecordRaw[] = [
     ]
   },
 
-  {
-    path: '/clipboard',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/clipboard/index.vue'),
-        name: 'ClipboardDemo',
-        meta: { title: '剪贴板', icon: 'clipboard' }
-      }
-    ]
-  },
+  // {
+  //   path: '/clipboard',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/clipboard/index.vue'),
+  //       name: 'ClipboardDemo',
+  //       meta: { title: '剪贴板', icon: 'clipboard' }
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/external-link',
-    component: Layout,
-    children: [
-      {
-        path: 'https://element-plus.midfar.com',
-        meta: { title: '外链', icon: 'link' },
-        redirect: ''
-      }
-    ]
-  },
+  // {
+  //   path: '/external-link',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'https://element-plus.midfar.com',
+  //       meta: { title: '外链', icon: 'link' },
+  //       redirect: ''
+  //     }
+  //   ]
+  // },
 
-  {
-    path: '/my-demo',
-    component: Layout,
-    name: 'MyDemo',
-    meta: {
-      title: '我的示例',
-      icon: 'component'
-    },
-    children: [
-      {
-        path: 'element-demo',
-        component: () => import('@/views/mydemo/ElementDemo.vue'),
-        name: 'ElementDemo',
-        meta: { title: 'Element 示例', icon: 'skill' }
-      },
-      {
-        path: 'store-demo',
-        component: () => import('@/views/mydemo/StoreDemo.vue'),
-        name: 'StoreDemo',
-        meta: { title: 'Store 示例', icon: 'lock' }
-      }
-    ]
-  },
+  // {
+  //   path: '/my-demo',
+  //   component: Layout,
+  //   name: 'MyDemo',
+  //   meta: {
+  //     title: '我的示例',
+  //     icon: 'component'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'element-demo',
+  //       component: () => import('@/views/mydemo/ElementDemo.vue'),
+  //       name: 'ElementDemo',
+  //       meta: { title: 'Element 示例', icon: 'skill' }
+  //     },
+  //     {
+  //       path: 'store-demo',
+  //       component: () => import('@/views/mydemo/StoreDemo.vue'),
+  //       name: 'StoreDemo',
+  //       meta: { title: 'Store 示例', icon: 'lock' }
+  //     }
+  //   ]
+  // },
 
   // 404 page must be placed at the end !!!
   { path: '/:pathMatch(.*)*', redirect: '/404', meta: { hidden: true }}
